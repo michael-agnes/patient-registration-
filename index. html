@@ -17,7 +17,7 @@
     overflow: hidden;
   }
   th, td {
-    border: 1px solid #444;
+    border: 1px solid black;
     padding: 12px 15px;
     text-align: left;
   }
@@ -29,7 +29,7 @@
     color:blue;
   }
   a {
-    color: #6cb4ff ;
+    color: sky blue ;
     text-decoration: underline;
   }
 </style>
