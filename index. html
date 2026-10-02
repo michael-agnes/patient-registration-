@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+  body {
+    font-family: Arial, sans-serif;
+    background: white;
+    padding: 20px;
+  }
+  table {
+    width: 100%;
+    max-width: 500px;
+    border-collapse: collapse;
+    background: yellow;
+    color: blue;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  th, td {
+    border: 1px solid #444;
+    padding: 12px 15px;
+    text-align: left;
+  }
+  th {
+    background: green;
+    width: 40%;
+  }
+  td {
+    color:blue;
+  }
+  a {
+    color: #6cb4ff ;
+    text-decoration: underline;
+  }
+</style>
+    <title>Patient Registration Form</title>
+</head>
+
+<body>
+<table>
+  <tr>
+    <th>Field</th>
+    <th>Details to Fill</th>
+  </tr>
+    <h1>Patient Registration Form</h1>
+
+    <form>
+
+       <tr>
+           <td><b><label for="fullname">Full Name:</label></b></td>
+        <td><input type="text" id="fullname" name="fullname" placeholder="Enter full name">
+        <br><br></td>
+        </tr>
+        
+       <tr>
+       <td> <b><br>Registration number:</b></td>
+       <td><input type="text" number ="registration number"></br></td></tr>
+
+       <tr>
+           <td> <b><br><label for="email">Email Address:</label></b></td>
+        <td><input type="email" id="email" name="email" placeholder="example@gmail.com"></td>
+        </br></tr>
+          
+        <tr>
+            <td><b><br><label for="phone">Phone Number:</label></b></td>
+       <td><input type="tel" id="phone" name="phone" placeholder="07XXXXXXXX">
+        </br></tr>
+
+       <tr> 
+           <td><b><br><label for="age">Age:</label></b> </td>
+        <td><input type="number" id="age" name="age" min="0" max="120"></td>
+        </br></tr>
+
+        <tr>
+            <td><b><br><label for="dob">Date of Birth:</label></b></td>
+       <td><input type="date" id="dob" name="dob">
+        </br></td></tr>
+      <tr>
+          <td><b><br><label>Gender:</label></b></td>
+       <td><input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label></br><td>
+            </tr>
+       <tr>
+           <td><b><br><label for="next of kin">Next of kin:</label></td></b>
+        <td><input type="text" name="next of kin" value="Enter the name of the closest relative" maxlength="40" ></br></td></tr>
+        
+       <tr>
+           <td><b><br> <label for="next of kin phone number">phone number:</label></b></td>
+        <td>  <input type="tel" name="phone number"></br></td></tr>
+
+        <tr>
+            <td><b><label>Symptoms:</label><br></b></td>
+
+        <td><input type="checkbox" id="fever" name="symptoms" value="Fever">
+        <label for="fever">Fever</label><br>
+
+        <input type="checkbox" id="headache" name="symptoms" value="Headache">
+        <label for="headache">Headache</label><br>
+
+        <input type="checkbox" id="cough" name="symptoms" value="Cough">
+        <label for="cough">Cough</label><br>
+
+        <input type="checkbox" id="pain" name="symptoms" value="Pain">
+        <label for="pain">Body Pain</label>
+        <br><br></td></tr>
+
+       <tr>
+           <td><b><br><label for="department">Department:</label></b></td>
+
+       <td><select id="department" name="department">
+            <option value="">--Select Department--</option>
+            <option value="general">General Medicine</option>
+            <option value="pediatrics">Pediatrics</option>
+            <option value="maternity">Maternity</option>
+            <option value="dentistry">Dentistry</option>
+            <option value="outpatient">Outpatient</option>
+        </select>
+        </br></td></tr>
+
+        <tr>
+            <td><b><br><label for="appointment">Preferred Appointment Time:</label></b></td>
+       <td><input type="time" id="appointment" name="appointment">
+        </br></td></tr>
+
+        <tr>
+            <td><b><br><label for="month">Preferred Appointment Month:</label></b></td>
+       <td><input type="month" id="month" name="month">
+        </br></td></tr>
+
+        <tr>
+            <td><b><br><label for="document">Upload Identification Document:</label></b></td>
+        <td><input type="file" id="document" name="document">
+        </br></td></tr>
+
+        <tr>
+            <td><b><br><label for="address">Home Address:</label></b></td>
+        <td><textarea id="address" name="address" rows="4" cols="40"
+                  placeholder="Enter your home address"></textarea>
+        </br></td></tr>
+
+        <tr>
+            <td><b><br><label for="search">Search Previous Patient Records:</label></b></td>
+        <td><input type="search" id="search" name="search">
+        </br></td></tr>
+
+     <tr>
+         <td><b><input type="submit"  value="submit"></b></td></tr>
+     </tr>
+     </table>
+     </form>
+     </body>
+     </html>
